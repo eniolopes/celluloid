@@ -34,8 +34,6 @@ module Celluloid
     def cores
      CPUCounter.cores
     end
-    alias_method :cpus, :cores
-    alias_method :ncpus, :cores
 
     # Perform a stack dump of all actors to the given output object
     def stack_dump(output = STDERR)
